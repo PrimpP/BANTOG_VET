@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap&effect=neon');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body2{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(media/dog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header2{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(media/dogs.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+.menu li, .menu button{
+    display: inline-block;
+}
+
+.menu li a, button{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+.menu li a:hover,.menu button:hover{
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu li button{
+    border-radius: 10px;
+    border: none;
+    padding: 5px 7.5px;
+    background: #89abe3ff;
+}
+
+.menu .active a{
+    color: orange;
+}
+
+.divLogo{
+    float: left;
+}
+
+.logo{
+    height: 200px;
+    width: 200px;
+}
+
+.text{
+    position: absolute;
+    width: 70%;
+    margin: 250px 15%;
+    text-align: center;
+}
+
+.text h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 65px;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 5px #f7eb02;
+    font-family: 'Combo', cursive;
+}
+
+.text button {
+    background: #449183;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    display: inline-block;
+    color: #fff;
+}
+
+.text button:hover{
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.text p{
+    color: #fff;
+    font-size: 15px;
+    width: 90%;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media(max-width: 850px){
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+
+    .menu li a,button{
+        padding: 5px;
+        font-size: 15px;
+        border: none;
+    }
+
+    .text{
+        width: 90%;
+        height: 100%;
+        margin: 30% 5%;
+    }
+
+    .text button{
+        font-size: 12px;
+        padding: 10px;
+        border: 1px solid black;
+        margin-top: 40px;
+    }
+
+    .text p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:650px){
+    body{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(media/dog.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .logo{
+        width: 125px;
+        height: 125px;
+        margin-top: 10px;
+    }
+
+    .divLogo{
+        background: lightcoral;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu{
+        margin-top: 40px;
+        width: 90%;
+        margin: 5% 5%;
+        text-align: center;
+    }
+
+    .menu li a,button{
+        padding: 5px;
+        font-size: 12px;
+        border: none;
+    }
+
+    .text{
+        width: 90%;
+        height: 100%;
+        margin: 60% 5%;
+    }
+
+    .text h1{
+        font-size: 35px;
+    }
+
+    .text p{
+        font-size: 14px;
+    }
+
+    .text button{
+        font-size: 12px;
+        padding: 10px;
+        border: 1px solid black;
+        margin-top: 70px;
+    }
+}
+
